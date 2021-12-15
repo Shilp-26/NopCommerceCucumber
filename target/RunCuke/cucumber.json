@@ -1,0 +1,318 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "I am on homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7704727200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "User should login successfully with valid credentials",
+        "description": "",
+        "id": "login-test;user-should-login-successfully-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 860543800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1426750800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on login link",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 148274900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I enter email \"prime@gamil.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "prime@gamil.com",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginSteps.iEnterEmail(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115186400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter password \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc123",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginSteps.iEnterPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1084335100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on login button",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41188200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should login successfully",
+            "match": {
+              "location": "LoginSteps.iShouldLoginSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@Sanity"
+          },
+          {
+            "line": 11,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Login Test",
+    "description": "As a user I want to login into Nop Commerce Website",
+    "id": "login-test",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "I am on homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3549754200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "verify That First Name Last Name Email Password And Confirm Password Fields Are Mandatory",
+        "description": "",
+        "id": "register-test;verify-that-first-name-last-name-email-password-and-confirm-password-fields-are-mandatory",
+        "after": [
+          {
+            "result": {
+              "duration": 849090700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 618336600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on register link",
+            "match": {
+              "location": "RegisterSteps.iClickOnRegisterLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 155833300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on register button",
+            "match": {
+              "location": "RegisterSteps.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54625800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I get error message first name \"First name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First name is required",
+                  "offset": 32
+                }
+              ],
+              "location": "RegisterSteps.iGetErrorMessageFirstName(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51256700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I get error message last name \"Last name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Last name is required",
+                  "offset": 31
+                }
+              ],
+              "location": "RegisterSteps.iGetErrorMessageLastName(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48544200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I get error message email \"Email is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Email is required",
+                  "offset": 27
+                }
+              ],
+              "location": "RegisterSteps.iGetErrorMessageEmail(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42409200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I get error message password \"Password is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password is required",
+                  "offset": 30
+                }
+              ],
+              "location": "RegisterSteps.iGetErrorMessagePassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44857900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I get error message confirm password \"Confirm Password is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Confirm Password is required",
+                  "offset": 38
+                }
+              ],
+              "location": "RegisterSteps.iGetErrorMessageConfirmPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I am not able to register successfully",
+            "match": {
+              "location": "RegisterSteps.iAmNotAbleToRegisterSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@Sanity"
+          },
+          {
+            "line": 11,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Register Test",
+    "description": "As a user I should register successfully",
+    "id": "register-test",
+    "keyword": "Feature",
+    "uri": "Register.feature"
+  }
+]
